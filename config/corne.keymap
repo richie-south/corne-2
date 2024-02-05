@@ -22,7 +22,7 @@
         second: ao {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(O)>;
+            bindings = <&kp LA(U) &kp O>;
             label = "SECOND";
         };
 
