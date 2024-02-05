@@ -11,6 +11,29 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        oa: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(A)>;
+            label = "NEW_MACRO";
+        };
+
+        o: ao {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(O)>;
+            label = "AO";
+        };
+
+        ao: oa {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp A>;
+            label = "OA";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -23,8 +46,8 @@
 
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E         &kp R     &kp T    &kp BACKSPACE  &kp Y      &kp U  &kp I  &kp O  &kp P
-&kp SPACE  &kp A  &kp S  &kp D         &kp F     &kp G    &kp COMMA      &kp H      &kp J  &kp K  &kp L  &none
-&kp LSHFT  &kp Z  &kp X  &kp C         &kp V     &kp B    &kp PERIOD     &kp N      &kp M  &none  &none  &kp RIGHT_CONTROL
+&kp SPACE  &kp A  &kp S  &kp D         &kp F     &kp G    &kp COMMA      &kp H      &kp J  &kp K  &kp L  &o
+&kp LSHFT  &kp Z  &kp X  &kp C         &kp V     &kp B    &kp PERIOD     &kp N      &kp M  &ao    &oa    &kp RIGHT_CONTROL
                          &kp LEFT_ALT  &kp LGUI  &to 1    &kp RET        &kp SPACE  &mo 1
             >;
         };
@@ -40,7 +63,7 @@
 &kp TAB    &kp EXCL     &kp AT  &kp HASH       &kp AMPERSAND  &kp DOLLAR          &kp BACKSPACE      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
 &kp LCTRL  &kp PERCENT  &none   &kp COLON      &kp EQUAL      &kp GREATER_THAN    &kp DOUBLE_QUOTES  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SLASH             &kp BSLH               &kp GRAVE
 &kp LSHFT  &none        &none   &kp SEMICOLON  &none          &kp LESS_THAN       &kp SINGLE_QUOTE   &kp MINUS         &kp PLUS           &kp QUESTION          &kp PIPE               &kp TILDE
-                                &kp LEFT_ALT   &kp LGUI       &to 2               &kp RET            &kp SPACE         &mo 0
+                                &kp LEFT_ALT   &kp LGUI       &to 2               &kp RET            &kp SPACE         &mo 2
             >;
         };
 
