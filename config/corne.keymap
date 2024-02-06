@@ -47,7 +47,7 @@
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E         &kp R     &kp T    &kp BACKSPACE  &kp Y      &kp U  &kp I   &kp O   &kp P
 &kp SPACE  &kp A  &kp S  &kp D         &kp F     &kp G    &kp COMMA      &kp H      &kp J  &kp K   &kp L   &second
-&kp LSHFT  &kp Z  &kp X  &kp C         &kp V     &kp B    &kp PERIOD     &kp N      &kp M  &third  &first  &kp RIGHT_CONTROL
+&kp LSHFT  &kp Z  &kp X  &kp C         &kp V     &kp B    &kp PERIOD     &kp N      &kp M  &first  &third  &kp RIGHT_CONTROL
                          &kp LEFT_ALT  &kp LGUI  &to 1    &kp RET        &kp SPACE  &mo 2
             >;
         };
@@ -62,7 +62,7 @@
             bindings = <
 &kp TAB    &kp EXCL     &kp AT  &kp HASH       &kp AMPERSAND  &kp DOLLAR          &kp BACKSPACE      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
 &kp LCTRL  &kp PERCENT  &none   &kp COLON      &kp EQUAL      &kp GREATER_THAN    &kp DOUBLE_QUOTES  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SLASH             &kp BSLH               &kp GRAVE
-&kp LSHFT  &kp ESC      &none   &kp SEMICOLON  &none          &kp LESS_THAN       &kp SINGLE_QUOTE   &kp MINUS         &kp PLUS           &kp QUESTION          &kp PIPE               &kp TILDE
+&kp LSHFT  &kp ESC      &none   &kp SEMICOLON  &kp ASTERISK   &kp LESS_THAN       &kp SINGLE_QUOTE   &kp MINUS         &kp PLUS           &kp QUESTION          &kp PIPE               &kp TILDE
                                 &kp LEFT_ALT   &kp LGUI       &to 2               &kp RET            &kp SPACE         &mo 0
             >;
         };
@@ -75,9 +75,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp BACKSPACE  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT     &none         &none
-&kp LSHFT   &kp ESC       &none         &none         &none         &none           &none          &none         &none         &none         &none         &none
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp BACKSPACE  &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT       &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT     &none         &none
+&kp LSHFT   &kp ESC       &none         &none         &none         &none           &none          &none         &none           &none         &none         &none
                                         &kp LEFT_ALT  &kp LGUI      &to 0           &kp RET        &kp SPACE     &none
             >;
         };
