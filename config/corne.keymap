@@ -63,7 +63,7 @@
 &kp TAB    &kp EXCL     &kp AT  &kp HASH       &kp AMPERSAND  &kp DOLLAR          &kp BACKSPACE      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
 &kp LCTRL  &kp PERCENT  &none   &kp COLON      &kp EQUAL      &kp GREATER_THAN    &kp DOUBLE_QUOTES  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SLASH             &kp BSLH               &kp GRAVE
 &kp LSHFT  &kp ESC      &none   &kp SEMICOLON  &kp ASTERISK   &kp LESS_THAN       &kp SINGLE_QUOTE   &kp MINUS         &kp PLUS           &kp QUESTION          &kp PIPE               &kp TILDE
-                                &kp LEFT_ALT   &kp LGUI       &to 2               &kp RET            &kp SPACE         &mo 0
+                                &kp LEFT_ALT   &kp LGUI       &to 2               &kp RET            &kp SPACE         &mo 2
             >;
         };
 
